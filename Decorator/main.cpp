@@ -6,7 +6,10 @@
 int main()
 {
 	window* win = new window;
-	win->SetContents(new BorderDecorator(new ScrollDecorator(new TextView()),1));
+	BorderDecorator* bor = new BorderDecorator(new ScrollDecorator(new TextView()), 1);
+	win->SetContents(bor);
+	delete bor;
+	delete win;
 	system("pause");
 	return 0;
 }

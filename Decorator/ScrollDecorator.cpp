@@ -8,6 +8,8 @@ ScrollDecorator::ScrollDecorator(VisualComponent* comp) :Decorator(comp)
 
 ScrollDecorator::~ScrollDecorator()
 {
+	std::cout << "delete ScrollDecorator!" << std::endl;
+
 }
 
 void ScrollDecorator::Draw()
@@ -19,9 +21,4 @@ void ScrollDecorator::Draw()
 void ScrollDecorator::DrawScroll()
 {
 	std::cout << "draw scroll!" << std::endl;
-}
-
-void ScrollDecorator::Resize()
-{
-
 }

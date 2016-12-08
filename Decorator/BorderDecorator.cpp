@@ -8,6 +8,8 @@ BorderDecorator::BorderDecorator(VisualComponent* comp, int borderWidth) :Decora
 
 BorderDecorator::~BorderDecorator()
 {
+	std::cout << "delete BorderDecorator!" << std::endl;
+
 }
 
 void BorderDecorator::Draw()
@@ -19,10 +21,5 @@ void BorderDecorator::Draw()
 void BorderDecorator::DrawBorder(int width)
 {
 	std::cout << "draw Border!" << std::endl;
-
-}
-
-void BorderDecorator::Resize()
-{
 
 }

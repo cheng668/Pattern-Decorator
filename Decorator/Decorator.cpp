@@ -8,6 +8,12 @@ Decorator::Decorator(VisualComponent* comp) :VisualComponent() , _component(comp
 
 Decorator::~Decorator()
 {
+	if (_component)
+	{
+		std::cout << "delete Decorator!" << std::endl;
+
+		delete _component;
+	}
 }
 
 void Decorator::Draw()
