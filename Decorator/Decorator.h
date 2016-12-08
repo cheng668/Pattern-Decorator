@@ -4,7 +4,7 @@ class Decorator :public VisualComponent
 {
 public:
 	Decorator(VisualComponent*);
-	~Decorator();
+	virtual ~Decorator();
 	virtual void Draw();
 	virtual void Resize();
 	//...

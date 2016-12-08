@@ -10,6 +10,6 @@ int main()
 	win->SetContents(bor);
 	delete bor;
 	delete win;
-	system("pause");
+	_CrtDumpMemoryLeaks();
 	return 0;
 }

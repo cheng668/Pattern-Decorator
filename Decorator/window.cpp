@@ -13,4 +13,5 @@ window::~window()
 void window::SetContents(VisualComponent* comp)
 {
 	comp->Draw();
+	
 }
