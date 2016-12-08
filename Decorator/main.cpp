@@ -10,6 +10,24 @@ int main()
 	win->SetContents(bor);
 	delete bor;
 	delete win;
+	system("pause");
 	_CrtDumpMemoryLeaks();
 	return 0;
 }
+
+/*
+output:
+	draw textview!
+	draw Decorator!
+	draw scroll!
+	draw Decorator!
+	draw Border!
+	delete BorderDecorator!
+	delete Decorator!
+	delete ScrollDecorator!
+	delete Decorator!
+	delete textview!
+	delete virtualComponent!
+	delete virtualComponent!
+	delete virtualComponent!
+*/
